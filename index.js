@@ -1,5 +1,28 @@
+/*
+const arr = [20, 30, 100, 40, 200, 99];
+
+// Find the min
+var min = arr[0];
+for(i = 1; i < arr.length; i++){
+    if(min > arr[i]){
+        min = arr[i];
+    }
+}
+console.log('min:', min);
+
+// Find the max
+var max = arr[0];
+for(i = 1; i < arr.length; i++){
+    if(max < arr[i]){
+        max = arr[i];
+    }
+}
+
+console.log('max:', max);
+
 // 1️⃣ Write a program to add 5 numbers. The value of numbers are num1=5, num2=13, num3=7, num4=21 and num5=48.
-/*let num1 = 5;
+
+let num1 = 5;
 let num2 = 13;
 let num3 = 7;
 let num4 = 21;
@@ -66,7 +89,27 @@ console.log(max(8,23,17));*/
 console.log(min(3, 29, 1));*/
 
 // 6️⃣ Write program to take a month as an input from the user and find out whether the month has 31 days or not.
+// const monthDaysCounter = (month) => { //3 //4
+//   if (month <= 7) {  // 3< 7 t | 4<7 t //f
+//     if (month === 2) { //f f
+//       return "Month consist of 28 days"
+//     } else if (month % 2 === 0) { //3%2 =1 1==0 f | 4%2=0
+//       return "Month consist of 30 days"
+//     } else {
+//       return "Month consist of 31 days"
+//     }
+//   } else if (month <= 12) {  //t
+//     if (month % 2 === 0) {  //f
+//       return "Month consist of 31 days"
+//     } else { 
+//       return "Month consist of 30 days"
+//     }
+//   } else {
+//     return "Please enter month number between 1 to 12 only..."
+//   }
+// }
 
+// console.log(monthDaysCounter(11))
 const daysCounter = (month) => {
   let lMonth = month.toLowerCase();
   if (lMonth === "january" || lMonth === "march" || lMonth === "may" || lMonth === "july" || lMonth === "august" || lMonth === "octomber" || lMonth === "december") {
@@ -99,6 +142,69 @@ console.log(check);
 // * * * * *
 
 // Write a program to take a number input from user and print multiplication table 12 times for that number.
+
+
+/*let numbers = [];
+for (let i = 1; i <= 100; i++) {
+  numbers.push(i);
+  if (i % 3 === 0 && i % 5 === 0) {
+    numbers[i - 1] = "FizzBuzz"
+  }
+  else if (i % 3 === 0) {
+    numbers[i - 1] = "Fizz";
+  }
+  else if (i % 5 === 0) {
+    numbers[i - 1] = "Buzz";
+  }
+}
+// solution2
+let numbers=[];
+for(let i=1; i<=100; i++) {
+  
+  if(i%3 ==0 && i%5 ==0) {
+      numbers.push("FizzBuzz")
+  }
+  else if(i%3 ==0 ){
+      numbers.push("Fizz")
+  }
+  else if(i%5==0) {
+      numbers.push("Buzz")
+  }
+  else{
+      numbers.push(i);
+  }
+}
+console.log(numbers);
+console.log(numbers);*/
+// Your output should look something like this 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, 16, 17 .....
+
+
+// 2️⃣ Print the following star pattern :-
+
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+/*for (let i = 0; i < 5; i++) { // rows
+  for (let j = 0; j <= i; j++) { //columns
+    document.write("*");
+  }
+  document.write("<br/>");
+}*/
+
+
+// 3️⃣ Write a program to take a number input from user and print multiplication table 12 times for that number.
+
+/*const multiplication = (n) => {
+  for (let i = 1; i <= 12; i++) {
+    for (let j = 1; j <= 10; j++) {
+      console.log(n * j);
+    }
+    console.log("\n");
+  }
+}
+multiplication(5);*/
 
 // Write a program to return a Fibonacci series : 0,1,1,2,3,5,8,13,21....
 
